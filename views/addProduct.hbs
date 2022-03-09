@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+
+<h1>привет {{user.name}} тут мы добавим бургер</h1>
+
+<form name="add" id="addPr">
+
+  <input type="text" name="name" placeholder="Название">
+  <input type="text" name="price" placeholder="Цена">
+  <input type="text" name="discount" placeholder="Скидка">
+  {{!-- <input type="text" name="geo" placeholder="Геопозиция"> --}}
+  <input type="text" name="img" placeholder="Ссылка на фото">
+  <input type="hidden" name="status" value="true">
+  <input type="hidden" name="courId" value="{{userId}}">
+  <button>Добавить</button>
+</form>
+
+
+
+<div class="container">
+{{#each product}}
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div style="background: url('{{this.img}}')" class="mdl-card__title mdl-card--expand">
+
+  </div>
+
+  <div class="mdl-card__supporting-text">
+    <p class="title">Блюдо: {{this.name}}</p>
+    <p class="price">Цена: {{this.price}}</p>
+    <p class="price">Cкидка: {{this.discount}}</p>
+  </div>
+
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+  </div>
+</div>
+{{/each }}
+
+<script src="/js/addProduct.js"></script>

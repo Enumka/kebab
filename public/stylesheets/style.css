@@ -1,0 +1,38 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-image: url(../images/кебаб.jpeg); */
+}
+
+ a {
+  color: #00B7FF;
+}
+
+.image-wrapper{
+  width: 100%;
+}
+
+.container{
+  margin: 20px 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
+.card{
+  width: 200px;
+  height: 200px;
+  background: rgb(167, 156, 192);
+  text-align: center;
+  margin: 7px;
+} */
+
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: rgb(161, 66, 66);
+  /* background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC; */
+}

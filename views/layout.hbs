@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Кебаб</title>
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <script defer src="/javascripts/client.js"></script>
+  <script defer src="/javascripts/map.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Delivery Ke-Bab</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          {{#if userName}}
+          <a class="mdl-navigation__link" href="/">Главная</a>
+          <a class="mdl-navigation__link" href="/courier/">Добавить продукты</a>
+          <a class="mdl-navigation__link" href="/users/logout">Выход</a>
+          {{else}}
+          <a class="mdl-navigation__link" href="/users/signup">Регистрация</a>
+          <a class="mdl-navigation__link" href="/users/signin">Авторизация</a>
+          {{/if}}
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Delivery Ke-Bab</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Главная</a>
+        <a class="mdl-navigation__link" href="/users/signup">Регистрация</a>
+        <a class="mdl-navigation__link" href="/users/signin">Авторизация</a>
+        {{#if userName}}
+        <a class="mdl-navigation__link" href="/courier/">Добавить продукты</a>
+        <a class="mdl-navigation__link" href="/users/logout">Выход</a>
+        {{/if}}
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Your content goes here -->
+      </div>
+    </main>
+  </div>
+  {{{body}}}
+  {{#if userName}}
+  <div id="map" style="width: 600px; height: 400px"></div>
+  {{/if}}
+</body>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=5750d9ee-d9cd-43ec-a7a0-c7ba5d2802d6&lang=ru_RU"
+  type="text/javascript">
+  </script>
+
+<script type="text/javascript"></script>
+
+</html>

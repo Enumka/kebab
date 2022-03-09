@@ -1,0 +1,50 @@
+{{!-- <div class="container">
+
+  <form action="/users/signin" method="post">
+    <ul>
+      <h1>Авторизация:</h1>
+    </ul>
+    <ul><input type="text" name="email" placeholder="email"></ul>
+    <ul><input type="password" name="password" placeholder="password"></ul>
+
+    <ul><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="roleId" value="1" checked>
+        <span class="mdl-radio__label">Курьер</span>
+      </label></ul>
+    <ul><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="roleId" value="2">
+        <span class="mdl-radio__label">Клиент</span>
+      </label></ul>
+
+    <ul><button> Войти </button></ul>
+
+  </form>
+
+  </center>
+</div>
+
+--}}
+
+
+<form action="/users/signup" method="post" name="signup">
+
+
+  <ul>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+      <input class="mdl-textfield__input" type="text" name="email" placeholder="почта">
+    </div>
+  </ul>
+
+  <ul>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+      <input class="mdl-textfield__input" type="password" name="password" placeholder="пароль">
+    </div>
+  </ul>
+
+
+  <ul><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Войти </button></ul>
+
+
+</form>

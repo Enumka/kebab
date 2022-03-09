@@ -1,0 +1,45 @@
+<h1>Регистрация. Заполните поля ввода</h1>
+
+
+
+<form action="/users/signup" method="post" name="signup">
+
+  <ul><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+    <input class="mdl-textfield__input" type="text" name="name" placeholder="имя" >
+  </div></ul>
+
+
+  <ul><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+    <input class="mdl-textfield__input" type="text" name="email" placeholder="почта">
+  </div></ul>
+
+  <ul><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+    <input class="mdl-textfield__input" type="password" name="password" placeholder="пароль">
+  </div></ul>
+
+  <ul><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+    <input class="mdl-textfield__input" type="text" name="tel" placeholder="номер телефона">
+
+  </div></ul>
+
+   <ul> <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+      <input type="radio" id="option-1" class="mdl-radio__button" name="roleId" value="1" checked>
+      <span class="mdl-radio__label">Курьер</span>
+    </label>
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+      <input type="radio" id="option-2" class="mdl-radio__button" name="roleId" value="2">
+      <span class="mdl-radio__label">Клиент</span>
+    </label></ul>
+
+   <ul> <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Зарегистрироваться </button> </ul>
+
+
+</form>
+
+
+
+<script src="/js/signup.js"></script>
